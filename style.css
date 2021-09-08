@@ -39,6 +39,10 @@ img{
 
 /* Base */
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font: 400 1rem "DM Sans", sans-serif;
     color: var(--text-color);
@@ -106,6 +110,10 @@ button:hover{
     margin-bottom: 1rem;
 }
 
+.section header{
+    margin-bottom: 4rem;
+}
+
 #header{
     border-bottom: 1px solid #e4e4e4;
     margin-bottom: 2rem;
@@ -116,6 +124,10 @@ button:hover{
     top: 0;
     left: 0;
     background-color: var(--body-color);
+}
+
+#header.scroll{
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
 main{
@@ -149,9 +161,12 @@ nav ul li{
     text-align: center;
 }
 
+
 nav .menu{
     opacity: 0;
     visibility: hidden;
+    top: -20rem;
+    transition: 0.2s;
 }
 
 nav ul li a{
@@ -180,6 +195,10 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+nav .menu ul{
+    display: none;
+}
+
 /* Show Menu */
 
 nav.show .menu{
@@ -194,11 +213,18 @@ nav.show .menu{
     position: fixed;
     top: 0;
     left: 0;
+
+    display: grid;
+    place-content: center;
 }
 
 nav.show .menu{
     display: grid;
     place-content: center;
+}
+
+nav.show .menu ul{
+    display: grid;
 }
 
 nav.show ul.grid{
@@ -220,13 +246,16 @@ nav .icon-close{
 
     position: absolute;
     right: 1.5rem;
-    /* tramsitio:; */
+    top: -1.5rem;
+    
+    transition: 0.2s;
 
 }
 
 nav.show div.icon-close{
     visibility: visible;
     opacity: 1;
+    top: 1.5rem;
 }
 
 
@@ -320,4 +349,29 @@ nav.show div.icon-close{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     text-align: center;
+}
+
+/* Services */
+
+.cards.grid{
+    gap: 1.5rem;
+}
+
+.card{
+    padding: 3.625rem 2rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-bottom: 0.25rem solid var(--base-color);
+    border-radius: .25rem .25rem 0 0;
+    text-align: center;
+}
+
+.card i{
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    color: var(--base-color);
+}
+.card .title{
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
 }
