@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="stylesheet" href="assets/icons/style.css">
 
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/icons/style.css">
     
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -109,64 +114,100 @@
 
         <!-- Testimonials -->
         
-        <sectio class="sectio" id="testimonials">
-            <div class="container grid">
+        <section class="section" id="testimonials">
+            <div class="container">
                 <header>
                     <h2 class="title">Depoimentos</h2>
                 </header>
-                <div class="testimonials">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim error sunt? Fuga quaerat saepe, quam ducimus deserunt dolore repellat nulla doloremque? Autem quia error ratione non aut, repellat dolorem?
-                            </p>
-    
-                            <cite>
-                                <img src="/assets/image/zoro.jpg" alt="Foto dos usuários">
-                                Roronoa Zoro
-                            </cite>
-                        </blockquote>
-                        
-                    </div>
-                    
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim error sunt? Fuga quaerat saepe, quam ducimus deserunt dolore repellat nulla doloremque? Autem quia error ratione non aut, repellat dolorem?
-                            </p>
-    
-                            <cite>
-                                <img src="/assets/image/luffy.jpg" alt="Foto dos usuários">
-                                Mokey D. Luffy
-                            </cite>
-                        </blockquote>
-                        
-                    </div>
+                <div class="testimonials swiper">
 
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim error sunt? Fuga quaerat saepe, quam ducimus deserunt dolore repellat nulla doloremque? Autem quia error ratione non aut, repellat dolorem?
-                            </p>
-    
-                            <cite>
-                                <img src="/assets/image/sanji.jpg" alt="Foto dos usuários">
-                                Sanji Vinsmoke
-                            </cite>
-                        </blockquote>
+                    <div class="swiper-wrapper">
+
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim error sunt? Fuga quaerat saepe, quam ducimus deserunt dolore repellat nulla doloremque? Autem quia error ratione non aut, repellat dolorem?
+                                </p>
+        
+                                <cite>
+                                    <img src="/assets/image/zoro.jpg" alt="Foto dos usuários">
+                                    Roronoa Zoro
+                                </cite>
+                            </blockquote>
+                            
+                        </div>
                         
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim error sunt? Fuga quaerat saepe, quam ducimus deserunt dolore repellat nulla doloremque? Autem quia error ratione non aut, repellat dolorem?
+                                </p>
+        
+                                <cite>
+                                    <img src="/assets/image/luffy.jpg" alt="Foto dos usuários">
+                                    Mokey D. Luffy
+                                </cite>
+                            </blockquote>
+                            
+                        </div>
+    
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim error sunt? Fuga quaerat saepe, quam ducimus deserunt dolore repellat nulla doloremque? Autem quia error ratione non aut, repellat dolorem?
+                                </p>
+        
+                                <cite>
+                                    <img src="/assets/image/sanji.jpg" alt="Foto dos usuários">
+                                    Sanji Vinsmoke
+                                </cite>
+                            </blockquote>
+                            
+                        </div>
+
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </sectio>
+        </section>
+
+        <!-- Contact -->
+
+        <section class="section" id="contact">
+            <div class="container grid">
+                <div class="text">
+                    <h2 class="title">Entre em contato</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque alias fugit perspiciatis iusto illo ullam omnis vel ut adipisci</p>
+                    <a href="https://api.whatsapp.com/send?phone=+5521996868496&text=Ola! Seu exercício ficou bom e funcional!" class="button" target="_blank"><i class="icon-whatsapp"></i> Me chame no WhatsApp</a>
+                </div>
+
+                <div class="links">
+                    <ul class="grid">
+                        <li><i class="icon-phone"> 21 99686-8496</i></li>
+                        <li><i class="icon-map"> RJ, Itaborai</i></li>
+                        <li><i class="icon-book"> pedrohfsc96.dev@gmail.com</i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
 
 
     </main>
 
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- JavaScript -->
     <script src="main.js"></script>
+    
 
     <footer>
 
